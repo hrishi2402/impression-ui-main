@@ -1,59 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--<< Header Area >>-->
-    <head>
-        <!-- ========== Meta Tags ========== -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="modinatheme">
-        <meta name="description" content="Oraxis - Architecture & Interior Html Template">
-        <!-- ======== Page title ============ -->
-        <title>Impressions - Beyond Square Feet </title>
-        <!--<< Favicon >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< Font Awesome.css >>-->
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-        <!--<< Style.css >>-->
-        <link rel="stylesheet" href="style.css">
-        <style>
-            @media (max-width: 1199px) {
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="modinatheme">
+    <meta name="description" content="Oraxis - Architecture & Interior Html Template">
+    <!-- ======== Page title ============ -->
+    <title>Impressions - Beyond Square Feet </title>
+    <!--<< Favicon >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< Font Awesome.css >>-->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--<< Style.css >>-->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        @media (max-width: 1199px) {
     .header-main {
         padding: 10px 0px;
     }
 }
-
-.bg-cover{
+        .bg-cover {
             background-position: unset;
         }
-        </style>
-    </head>
 
+        .theme-btn-outline {
+            background-color: transparent;
+        }
+        .btn-primary{
+            background-color: #3e3091;
+            padding: 15px;
+            font-size: 15px;
+            border-color: #3e3091;
+        }
+        .btn-outline-primary{
+            border-color: #3e3091;
+            padding: 15px;
+            font-size: 15px;
+            color: #3e3091;
+        }
+    </style>
+    <style>
+        .portfolio-container {
+            position: relative;
+            margin: 0 -1rem 4rem;
+            transition: height .4s
+        }
 
-    <body>
+        .portfolio-container::after {
+            display: block;
+            clear: both;
+            content: ''
+        }
 
-        <!-- Back To Top Start -->
-        <div class="scroll-up">
-            <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-            </svg>
-        </div>
+        .portfolio-nogap {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1rem
+        }
 
-         <!-- Preloader Start -->
+        .portfolio-nogap .col,
+        .portfolio-nogap [class*=col-] {
+            padding-left: 0;
+            padding-right: 0
+        }
+
+        .portfolio-nogap .portfolio-item {
+            margin-bottom: 0
+        }
+
+        .portfolio-item {
+            float: left;
+            margin-bottom: 2rem
+        }
+
+        .portfolio {
+            position: relative
+        }
+
+        .portfolio-media {
+            background-color: #ccc;
+            margin: 0
+        }
+
+        .portfolio-media>a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            outline: none !important
+        }
+
+        .portfolio-media img {
+            display: block;
+            max-width: none;
+            width: 100%;
+            height: auto
+        }
+
+        .nav-filter .active a {
+            color: #3e3091;   
+            border-bottom-color: #3e3091;  
+        }
+
+        .nav-filter {
+            display: flex;
+            margin-bottom: 3rem;
+        }
+
+        .nav-filter a {
+            display: inline-block;
+            color: #777;
+            padding: .4rem 1rem;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            letter-spacing: -.01em;
+            border-bottom: .1rem solid transparent;
+        }
+        @media (max-width: 768px) {
+            .desktop-section {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Back To Top Start -->
+    <div class="scroll-up">
+        <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- Preloader Start -->
     <div id="preloader" class="preloader">
         <div class="animation-preloader">
             <div class="spinner">
@@ -389,7 +490,7 @@
     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/title-bg.png');">
         <div class="container  pb-3">
             <div class="page-heading">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">Blogs</h2>
+                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">Gallery</h2>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="index.html">
@@ -400,7 +501,7 @@
                         <i class="fas fa-chevron-right"></i>
                     </li>
                     <li>
-                        Blogs
+                        Gallery
                     </li>
                 </ul>
             </div>
@@ -408,220 +509,144 @@
     </div>
 
 
-        <!-- News Section Start -->
-        <section class="news-section section-padding fix">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="news-card-items style-2 mt-0">
-                            <div class="news-image bg-cover" style="background-image: url('assets/img/news/blog1.png');"></div>
-                            <div class="news-content">
-                                
-                                <h3>
-                                    <a href="news-details.html">Discover the Quintessence of Interior Design</a>
-                                </h3>
-                                <p>
-                                    Financial planners help people to gain knowledge aboutw toio invest and save le all 
-                                </p>
-                                <a href="news-details.html" class="link-btn">
-                                    Read More <i class="far fa-plus"></i>
-                                </a>
-                            </div>
+    <!-- Gallery Section Start -->
+    <section class="container">
+
+        <nav class="portfolio-nav mt-3">
+            <ul class="nav-filter portfolio-filter justify-content-center wow fadeInUp" data-wow-delay=".5s">
+                <li class="active"><a href="#" data-filter="*" class="fw-bold ">All</a></li>
+                <li><a href="#" data-filter=".women" class="fw-bold ">Internal</a></li>
+                <li><a href="#" data-filter=".men" class="fw-bold ">External</a></li>
+            </ul>
+        </nav><!-- End .portfolio-nav -->
+
+        <div class="portfolio-container wow fadeInUp" data-wow-delay=".3s">
+            <div class="portfolio-item accessories women col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos1.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos1.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+
+            <div class="portfolio-item men col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos2.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos2.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+
+            <div class="portfolio-item women accessories col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos3.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos3.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+
+            <div class="portfolio-item men col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos4.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos4.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+
+            <div class="portfolio-item men women col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos1.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos1.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+
+            <div class="portfolio-item men accessories col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos2.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos2.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+
+            <div class="portfolio-item men col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos1.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos1.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+
+            <div class="portfolio-item women accessories col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio mx-2">
+                    <figure class="portfolio-media">
+                        <a href="assets/img/shop/pannashphotos1.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img src="assets/img/shop/pannashphotos1.png" alt="item" class="img-fluid">
+                        </a>
+                    </figure>
+                </div><!-- End .portfolio portfolio-overlay -->
+            </div><!-- End .portfolio-item -->
+        </div><!-- End .portfolio-container -->
+    </section><!-- End .container -->
+
+   <!-- Footer Section Start -->
+   <footer class="footer-section fix achievement-section pt-0" style="border-top: 2px solid #3e3091;">
+    <div class="shape-left">
+        <img src="assets/img/shape.png" alt="shape-img">
+        </div>
+    <div class="container">
+        <div class="footer-widgets-wrapper">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <a href="index.html">
+                                <img src="assets/img/logo/impressions-logo-color.png" alt="logo-img">
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="news-card-items style-2 mt-0">
-                            <div class="news-image bg-cover" style="background-image: url('assets/img/news/blog1.png');"></div>
-                            <div class="news-content">
-                                
-                                <h3>
-                                    <a href="news-details.html">Discover the Quintessence of Interior Design</a>
-                                </h3>
-                                <p>
-                                    Financial planners help people to gain knowledge aboutw toio invest and save le all 
-                                </p>
-                                <a href="news-details.html" class="link-btn">
-                                    Read More <i class="far fa-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="news-card-items style-2 mt-0">
-                            <div class="news-image bg-cover" style="background-image: url('assets/img/news/blog1.png');"></div>
-                            <div class="news-content">
-                                
-                                <h3>
-                                    <a href="news-details.html">Discover the Quintessence of Interior Design</a>
-                                </h3>
-                                <p>
-                                    Financial planners help people to gain knowledge aboutw toio invest and save le all 
-                                </p>
-                                <a href="news-details.html" class="link-btn">
-                                    Read More <i class="far fa-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        
-        
-        <!-- Footer Section Start -->
-        <footer class="footer-section fix achievement-section pt-0" style="border-top: 2px solid #3e3091;">
-            <div class="shape-left">
-                <img src="assets/img/shape.png" alt="shape-img">
-                </div>
-            <div class="container">
-                <div class="footer-widgets-wrapper">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/impressions-logo-color.png" alt="logo-img">
-                                    </a>
-                                </div>
-                                <div class="footer-content text-black">
-                                    <p>
-                                        It is a long established fact that a reader will be distracted
-                                    </p>
-                                    
-                                    <div class="social-icon d-flex align-items-center">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                            <div class="single-footer-widget ml-100">
-                                <div class="widget-head">
-                                    <h3>Quick links</h3>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="about.html"> 
-                                            About Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="service.html">
-                                            Service
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="news.html">
-                                            Blog Post
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="team.html">
-                                            Team Members
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 ps-md-5 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>More Service</h3>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="service-details.html">
-                                            SpaceCraft Studio
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details.html">
-                                            Interiorscape Design
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details.html">
-                                            Architecture Plus
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details.html">
-                                            Dream Home Designs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details.html">
-                                            Interior Perfection
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Contact</h3>
-                                </div>
-                                <div class="footer-content">
-                                    <div class="contact-info-area">
-                                        <div class="contact-items">
-                                            <div class="icon">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </div>
-                                            <div class="content">
-                                                <p>Address</p>
-                                                <h4>66 Broklyant,New India</h4>
-                                            </div>
-                                        </div>
-                                        <div class="contact-items">
-                                            <div class="icon">
-                                                <i class="fas fa-phone-alt"></i>
-                                            </div>
-                                            <div class="content">
-                                                <p>Address</p>
-                                                <h4><a href="tel:0123456789101">012 345 678 9101</a></h4>
-                                            </div>
-                                        </div>
-                                        <div class="contact-items">
-                                            <div class="icon">
-                                                <i class="fal fa-envelope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <p>Address</p>
-                                                <h4> <a href="mailto:info@example.com" class="link">info@example.com</a></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="footer-content text-black">
+                            <p>
+                                It is a long established fact that a reader will be distracted
+                            </p>
+                            
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                        <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                            © <a href="index.html">Modinatheme</a>  2024 | All Rights Reserved
-                        </p>
-                        <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-footer-widget ml-100">
+                        <div class="widget-head">
+                            <h3>Quick links</h3>
+                        </div>
+                        <ul class="list-items">
                             <li>
-                                <a href="contact.html">
-                                    Trams & Condition
+                                <a href="about.html"> 
+                                    About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
-                                    Privacy Policy
+                                <a href="service.html">
+                                    Service
                                 </a>
                             </li>
                             <li>
@@ -629,34 +654,225 @@
                                     Contact Us
                                 </a>
                             </li>
+                            <li>
+                                <a href="news.html">
+                                    Blog Post
+                                </a>
+                            </li>
+                            <li>
+                                <a href="team.html">
+                                    Team Members
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-xl-3 col-lg-4 ps-md-5 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <h3>More Service</h3>
+                        </div>
+                        <ul class="list-items">
+                            <li>
+                                <a href="service-details.html">
+                                    SpaceCraft Studio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service-details.html">
+                                    Interiorscape Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service-details.html">
+                                    Architecture Plus
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service-details.html">
+                                    Dream Home Designs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service-details.html">
+                                    Interior Perfection
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="footer-content">
+                            <div class="contact-info-area">
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p>Address</p>
+                                        <h4>66 Broklyant,New India</h4>
+                                    </div>
+                                </div>
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p>Address</p>
+                                        <h4><a href="tel:0123456789101">012 345 678 9101</a></h4>
+                                    </div>
+                                </div>
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p>Address</p>
+                                        <h4> <a href="mailto:info@example.com" class="link">info@example.com</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
+                    © <a href="index.html">Modinatheme</a>  2024 | All Rights Reserved
+                </p>
+                <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
+                    <li>
+                        <a href="contact.html">
+                            Trams & Condition
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
 
 
-        <!--<< All JS Plugins >>-->
-        <script src="assets/js/jquery-3.7.1.min.js"></script>
-        <!--<< Viewport Js >>-->
-        <script src="assets/js/viewport.jquery.js"></script>
-        <!--<< Bootstrap Js >>-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!--<< Nice Select Js >>-->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!--<< Waypoints Js >>-->
-        <script src="assets/js/jquery.waypoints.js"></script>
-        <!--<< Counterup Js >>-->
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <!--<< Swiper Slider Js >>-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <!--<< MeanMenu Js >>-->
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <!--<< Magnific Popup Js >>-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!--<< Wow Animation Js >>-->
-        <script src="assets/js/wow.min.js"></script>
-        <!--<< Main.js >>-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        // Main Js File
+        $(document).ready(function () {
+            // Masonry / Grid layout fnction
+            function layoutInit(container, selector) {
+                $(container).each(function () {
+                    var $this = $(this);
+
+                    $this.isotope({
+                        itemSelector: selector,
+                        layoutMode: ($this.data('layout') ? $this.data('layout') : 'masonry')
+                    });
+                });
+            }
+
+            function isotopeFilter(filterNav, container) {
+                $(filterNav).find('a').on('click', function (e) {
+                    var $this = $(this),
+                        filter = $this.attr('data-filter');
+
+                    // Remove active class
+                    $(filterNav).find('.active').removeClass('active');
+
+                    // Init filter
+                    $(container).isotope({
+                        filter: filter,
+                        transitionDuration: '0.7s'
+                    });
+
+                    // Add active class
+                    $this.closest('li').addClass('active');
+                    e.preventDefault();
+                });
+            }
+
+            /* Masonry / Grid Layout & Isotope Filter for blog/portfolio etc... */
+            if (typeof imagesLoaded === 'function' && $.fn.isotope) {
+                // Portfolio
+                $('.portfolio-container').imagesLoaded(function () {
+                    // Portfolio Grid/Masonry
+                    layoutInit('.portfolio-container', '.portfolio-item'); // container - selector
+                    // Portfolio Filter
+                    isotopeFilter('.portfolio-filter', '.portfolio-container'); //filterNav - .container
+                });
+
+                // Blog
+                $('.entry-container').imagesLoaded(function () {
+                    // Blog Grid/Masonry
+                    layoutInit('.entry-container', '.entry-item'); // container - selector
+                    // Blog Filter
+                    isotopeFilter('.entry-filter', '.entry-container'); //filterNav - .container
+                });
+
+                // Product masonry product-masonry.html
+                $('.product-gallery-masonry').imagesLoaded(function () {
+                    // Products Grid/Masonry
+                    layoutInit('.product-gallery-masonry', '.product-gallery-item'); // container - selector
+                });
+
+                // Products - Demo 11
+                $('.products-container').imagesLoaded(function () {
+                    // Products Grid/Masonry
+                    layoutInit('.products-container', '.product-item'); // container - selector
+                    // Product Filter
+                    isotopeFilter('.product-filter', '.products-container'); //filterNav - .container
+                });
+            }
+
+        });
+
+    </script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+    });
+    </script>
+</body>
+
 </html>
