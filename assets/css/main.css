@@ -1603,7 +1603,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 1199px) {
   .breadcrumb-wrapper .page-heading {
-    margin-top: 35px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 991px) {
