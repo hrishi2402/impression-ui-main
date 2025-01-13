@@ -887,7 +887,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 1199px) {
   .header-main {
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
 }
 .header-main .main-menu ul {
@@ -2499,8 +2499,6 @@ input.main-search-input::placeholder {
   overflow: hidden;
 }
 .hero-5 .hero-wrapper {
-  margin-left: -350px;
-  margin-right: -350px;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
@@ -4350,7 +4348,7 @@ input.main-search-input::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-position: center;
+  background-position: unset;
 }
 
 .nice-select {

@@ -194,15 +194,14 @@
 
         <!-- Header Area Start -->
         <header>
-            <div id="header-sticky" class="header-1 header-2">
+            <div id="header-sticky" class="header-1">
                 <div class="container-fluid">
                     <div class="mega-menu-wrapper">
                         <div class="header-main">
                             <div class="header-left">
                                 <div class="logo">
                                     <a href="index.html" class="header-logo-2">
-                                        <img id="whiteLogo" src="assets/img/logo/impressions-logo-white.png" alt="logo-img" style="height: 3rem;">
-                                        <img id="colorLogo" src="assets/img/logo/impressions-logo-color.png" alt="logo-img" style="display: none; height: 3rem;">
+                                        <img id="colorLogo" src="assets/img/logo/impressions-logo-color.png" alt="logo-img" style=" height: 3rem;">
                                     </a>
                                 </div>
                                 <div class="mean__menu-wrapper">
@@ -380,19 +379,11 @@
                                 </div>
                             </div>
                             <div class="header-right d-flex justify-content-end align-items-center">
-                               <div class="icon-items">
-                                    <div class="icon">
-                                        <i class="fas fa-phone-alt"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p>Requesting A Call:</p>
-                                        <h4><a href="tel:6295550129">(629) 555-0129</a></h4>
-                                    </div>
-                               </div>
+                               
                                 
                                 <div class="header__hamburger d-xl-block my-auto">
                                     <div class="sidebar__toggle">
-                                       <img src="assets/img/bar.svg" id="whiteBar" alt="img">
+                                       
                                        <img src="assets/img/black-bar.png" id="blackBar" alt="">
                                     </div>
                                 </div>
@@ -951,26 +942,7 @@
         <script src="assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
-        <script>
-            window.addEventListener('scroll', () => {
-                const whiteLogo = document.getElementById('whiteLogo');
-                const colorLogo = document.getElementById('colorLogo');
-                const whiteBar = document.getElementById('whiteBar');
-                const blackBar = document.getElementById('blackBar');
         
-                if (window.scrollY > 50) { // Adjust scroll threshold as needed
-                    whiteLogo.style.display = 'none';
-                    colorLogo.style.display = 'block';
-                    whiteBar.style.display = 'none';
-                    blackBar.style.display = 'block';
-                } else {
-                    whiteLogo.style.display = 'block';
-                    colorLogo.style.display = 'none';
-                    whiteBar.style.display = 'block';
-                    blackBar.style.display = 'none';
-                }
-            });
-        </script>
         
     </body>
 </html>

@@ -143,7 +143,7 @@
 
         if($('.hero-slider-2').length > 0) {
             const heroSlider2 = new Swiper(".hero-slider-2", {
-                spaceBetween: 30,
+                spaceBetween: 0,
                 speed: 1200,
                 loop: true,
                 centeredSlides: true,
@@ -157,7 +157,7 @@
                 },
                 breakpoints: {
                     1199: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     },
                     991: {
                         slidesPerView: 1,
