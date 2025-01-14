@@ -33,137 +33,17 @@
     <!--<< Style.css >>-->
     <link rel="stylesheet" href="style.css">
     <style>
-
-@media (max-width: 1199px) {
-    .header-main {
-        padding: 10px 0px;
+         @media screen and (min-width: 1200px) {
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: bolder;
+                }
+                .header-main {
+        padding: 5px 0px;
     }
-}
-        .bg-cover{
-            background-position: unset;
-        }
-        .wrapper {
-            height: 60px;
-            width: 95vw;
-            background: #fff;
-            line-height: 60px;
-            border-radius: 50px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-        }
-
-        .wrapper nav {
-            position: relative;
-            display: flex;
-        }
-
-        .wrapper nav label {
-            margin-left: 20px;
-            margin-right: 20px;
-            flex: 1;
-            width: 100%;
-            z-index: 1;
-            cursor: pointer;
-        }
-
-        .wrapper nav label a {
-            position: relative;
-            z-index: -1;
-            color: #1d1f20;
-            font-size: 20px;
-            font-weight: 500;
-            text-decoration: none;
-            transition: color 0.6s ease;
-        }
-
-        .wrapper nav #home:checked~label.home a,
-        .wrapper nav #inbox:checked~label.inbox a {
-            color: #fff;
-        }
-
-        .wrapper nav label a i {
-            font-size: 25px;
-            margin: 0 7px;
-        }
-
-        .wrapper nav .tab {
-            position: absolute;
-            height: 100%;
-            width: 50%;
-            left: 0;
-            bottom: 0;
-            z-index: 0;
-            border-radius: 50px;
-            background: linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
-            transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-
-        .wrapper nav #inbox:checked~.tab {
-            left: 50%;
-        }
-
-
-        .wrapper nav input {
-            display: none;
-        }
-
-        @media (max-width: 700px) {
-            .wrapper {
-                transform: scale(0.7);
+                
             }
-        }
-
-        .tabcontent {
-            display: none;
-            -webkit-animation: fadeEffect 1s;
-            animation: fadeEffect 1s;
-        }
-
-
-        @-webkit-keyframes fadeEffect {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeEffect {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
-    <style>
-        @media (max-width: 768px) {
-            .desktop-section {
-                display: none;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-
-            .mobile-section {
-                display: unset;
-            }
-        }
-
-        @media screen and (min-width: 1200px) {
-            .mobile-section {
-                display: none;
-            }
-        }
-
-        @media screen and (min-width: 992px) {
-            .mobile-section {
-                display: none;
-            }
-        }
     </style>
 </head>
 
@@ -280,8 +160,8 @@
     </div>
     <div class="offcanvas__overlay"></div>
 
-    <!-- Header Area Start -->
-    <header>
+     <!-- Header Area Start -->
+     <header>
         <div id="header-sticky" class="header-1">
             <div class="container-fluid">
                 <div class="mega-menu-wrapper">
@@ -510,9 +390,9 @@
     <!--<< Breadcrumb Section Start >>-->
     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/title-bg.png');">
         <div class="container  pb-3">
-            <div class="page-heading">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">Our Projects</h2>
-                <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+            <div class="page-heading mt-3">
+                <h2 class="wow fadeInUp text-white text-center" data-wow-delay=".3s">Our Projects</h2>
+                <ul class="breadcrumb-items wow fadeInUp d-flex justify-content-center" data-wow-delay=".5s">
                     <li>
                         <a href="index.html">
                             Home
@@ -548,93 +428,85 @@
     -->
 
     
-    <div class="d-flex justify-content-center mt-3">
+    <div class="d-flex justify-content-center mt-5">
         <h4>Completed Projects</h4>
     </div>
 
     <div id="Completed" >
         <section class="about-section fix section-padding pt-4 pb-0">
             <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="about-wrapper-3 pb-2">
+                                
+                                    <div class="about-image">
+                                        <a href="project-details.html">
+                                            <img src="assets/img/hero/desktophero1.png" alt="about-img">
+                                        </a>
+                                    </div>
+                                
+                                    <div class="about-content mt-3 mx-0">
+                                        <div class="section-title mb-0">
+                                            <span class="wow fadeInUp mb-0">Pannash</span>
+                                            
+                                        </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
+                                                    Know More<i class='bx bx-chevron-right'></i>
+                                                </a>
+                                            </div>
+                                    </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="about-wrapper-3 pb-2">
+                                
+                                    <div class="about-image">
+                                        <a href="project-details.html">
+                                            <img src="assets/img/hero/desktophero1.png" alt="about-img">
+                                        </a>
+                                    </div>
+                                
+                                    <div class="about-content mt-3 mx-0">
+                                        <div class="section-title mb-0">
+                                            <span class="wow fadeInUp mb-0">Pannash</span>
+                                            
+                                        </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
+                                                    Know More<i class='bx bx-chevron-right'></i>
+                                                </a>
+                                            </div>
+                                    </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="about-wrapper-3 pb-2">
+                                
+                                    <div class="about-image">
+                                        <a href="project-details.html">
+                                            <img src="assets/img/hero/desktophero1.png" alt="about-img">
+                                        </a>
+                                    </div>
+                                
+                                    <div class="about-content mt-3 mx-0">
+                                        <div class="section-title mb-0">
+                                            <span class="wow fadeInUp mb-0">Pannash</span>
+                                            
+                                        </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
+                                                    Know More<i class='bx bx-chevron-right'></i>
+                                                </a>
+                                            </div>
+                                    </div>
+                            
+                        </div>
+                    </div>
+                </div>
 
-
-                <div class="about-wrapper-3 pb-2">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="about-image">
-                                <a href="project-details.html">
-                                    <img src="assets/img/hero/desktophero1.png" alt="about-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-2 mt-lg-0">
-                            <div class="about-content mt-3">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp mb-0">Pannash</span>
-                                    
-                                </div>
-                                
-                                
-                                    <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-wrapper-3 pb-2">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="about-image">
-                                <a href="project-details.html">
-                                    <img src="assets/img/hero/desktophero1.png" alt="about-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-2 mt-lg-0">
-                            <div class="about-content mt-3">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp mb-0">Pannash</span>
-                                    
-                                </div>
-                                
-                                
-                                    <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-wrapper-3 pb-2">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="about-image">
-                                <a href="project-details.html">
-                                    <img src="assets/img/hero/desktophero1.png" alt="about-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-2 mt-lg-0">
-                            <div class="about-content mt-3">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp mb-0">Pannash</span>
-                                    
-                                </div>
-                                
-                                
-                                    <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!--
                 <div class="about-wrapper-3 pb-2">
                     <div class="section-title mb-3 mobile-section">
@@ -679,93 +551,85 @@
         </section>
     </div>
 
-    <div class="d-flex justify-content-center mt-0 mb-4">
+    <div class="d-flex justify-content-center mt-3 mb-4">
         <h4>Ongoing Projects</h4>
     </div>
 
     <div id="Completed" >
         <section class="about-section fix section-padding pt-0">
             <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="about-wrapper-3 pb-2">
+                                
+                                    <div class="about-image">
+                                        <a href="project-details.html">
+                                            <img src="assets/img/hero/desktophero1.png" alt="about-img">
+                                        </a>
+                                    </div>
+                                
+                                    <div class="about-content mt-3 mx-0">
+                                        <div class="section-title mb-0">
+                                            <span class="wow fadeInUp mb-0">Pannash</span>
+                                            
+                                        </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
+                                                    Know More<i class='bx bx-chevron-right'></i>
+                                                </a>
+                                            </div>
+                                    </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="about-wrapper-3 pb-2">
+                                
+                                    <div class="about-image">
+                                        <a href="project-details.html">
+                                            <img src="assets/img/hero/desktophero1.png" alt="about-img">
+                                        </a>
+                                    </div>
+                                
+                                    <div class="about-content mt-3 mx-0">
+                                        <div class="section-title mb-0">
+                                            <span class="wow fadeInUp mb-0">Pannash</span>
+                                            
+                                        </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
+                                                    Know More<i class='bx bx-chevron-right'></i>
+                                                </a>
+                                            </div>
+                                    </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="about-wrapper-3 pb-2">
+                                
+                                    <div class="about-image">
+                                        <a href="project-details.html">
+                                            <img src="assets/img/hero/desktophero1.png" alt="about-img">
+                                        </a>
+                                    </div>
+                                
+                                    <div class="about-content mt-3 mx-0">
+                                        <div class="section-title mb-0">
+                                            <span class="wow fadeInUp mb-0">Pannash</span>
+                                            
+                                        </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
+                                                    Know More<i class='bx bx-chevron-right'></i>
+                                                </a>
+                                            </div>
+                                    </div>
+                            
+                        </div>
+                    </div>
+                </div>
 
-
-                <div class="about-wrapper-3 pb-2">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="about-image">
-                                <a href="project-details.html">
-                                    <img src="assets/img/hero/desktophero1.png" alt="about-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-2 mt-lg-0">
-                            <div class="about-content mt-3">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp mb-0">Pannash</span>
-                                    
-                                </div>
-                                
-                                
-                                    <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-wrapper-3 pb-2">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="about-image">
-                                <a href="project-details.html">
-                                    <img src="assets/img/hero/desktophero1.png" alt="about-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-2 mt-lg-0">
-                            <div class="about-content mt-3">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp mb-0">Pannash</span>
-                                    
-                                </div>
-                                
-                                
-                                    <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-wrapper-3 pb-2">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="about-image">
-                                <a href="project-details.html">
-                                    <img src="assets/img/hero/desktophero1.png" alt="about-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-2 mt-lg-0">
-                            <div class="about-content mt-3">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp mb-0">Pannash</span>
-                                    
-                                </div>
-                                
-                                
-                                    <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!--
                 <div class="about-wrapper-3 pb-2">
                     <div class="section-title mb-3 mobile-section">

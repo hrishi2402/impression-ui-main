@@ -33,107 +33,21 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    
     <style>
-       
-        .theme-btn-outline {
-            background-color: transparent;
-        }
-        .btn-primary{
-            background-color: #3e3091;
-            padding: 15px;
-            font-size: 15px;
-            border-color: #3e3091;
-        }
-        .btn-outline-primary{
-            border-color: #3e3091;
-            padding: 15px;
-            font-size: 15px;
-            color: #3e3091;
-        }
-    </style>
-    <style>
-        .portfolio-container {
-            position: relative;
-            margin: 0 -1rem 4rem;
-            transition: height .4s
-        }
-
-        .portfolio-container::after {
-            display: block;
-            clear: both;
-            content: ''
-        }
-
-        .portfolio-nogap {
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 1rem
-        }
-
-        .portfolio-nogap .col,
-        .portfolio-nogap [class*=col-] {
-            padding-left: 0;
-            padding-right: 0
-        }
-
-        .portfolio-nogap .portfolio-item {
-            margin-bottom: 0
-        }
-
-        .portfolio-item {
-            float: left;
-            margin-bottom: 2rem
-        }
-
-        .portfolio {
-            position: relative
-        }
-
-        .portfolio-media {
-            background-color: #ccc;
-            margin: 0
-        }
-
-        .portfolio-media>a {
-            position: relative;
-            display: block;
-            overflow: hidden;
-            outline: none !important
-        }
-
-        .portfolio-media img {
-            display: block;
-            max-width: none;
-            width: 100%;
-            height: auto
-        }
-
-        .nav-filter .active a {
-            color: #3e3091;   
-            border-bottom-color: #3e3091;  
-        }
-
-        .nav-filter {
-            display: flex;
-            margin-bottom: 3rem;
-        }
-
-        .nav-filter a {
-            display: inline-block;
-            color: #777;
-            padding: .4rem 1rem;
-            font-weight: 400;
-            font-size: 1.2rem;
-            line-height: 1.5;
-            letter-spacing: -.01em;
-            border-bottom: .1rem solid transparent;
-        }
-        @media (max-width: 768px) {
-            .desktop-section {
-                display: none;
+        
+        @media screen and (min-width: 1200px) {
+                
+                h4{
+                    font-size: 30px;
+                    font-weight: bolder;
+                }
+                .header-main {
+        padding: 5px 0px;
+    }
+                
             }
-        }
+        
     </style>
 </head>
 
@@ -481,9 +395,9 @@
     <!--<< Breadcrumb Section Start >>-->
     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/title-bg.png');">
         <div class="container  pb-3">
-            <div class="page-heading">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">Pannash</h2>
-                <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+            <div class="page-heading mt-3">
+                <h2 class="wow fadeInUp text-white text-center" data-wow-delay=".3s">Pannash</h2>
+                <ul class="breadcrumb-items wow fadeInUp d-flex justify-content-center" data-wow-delay=".5s">
                     <li>
                         <a href="index.html">
                             Home
@@ -510,11 +424,9 @@
 
 
     <!-- Shop Details Section Start -->
-    <section class="shop-details-section section-padding pb-2 pt-3">
+    <section class="shop-details-section section-padding pb-2 pt-5">
         <div class="container">
             <div class="shop-details-wrapper">
-                
-
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="shop-details-image">
@@ -563,14 +475,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <!--
-                        <div class="d-flex justify-content-center mb-5">
-                            <a href="" class="btn btn-md btn-primary mx-2"><i
-                                    class="bx bx-download"></i> <span class="h6">Download&nbsp;Brochure</span></a>
-                            <a href="#FloorPlan" class="btn btn-md btn-outline-primary mx-2"><i
-                                    class="bx bx-chevron-down-circle"></i> <span class="h6">Floor&nbsp;Plan</span></a>
-
-                        </div>-->
                     </div>
                     <div class="col-lg-7">
                         <section class="work-process-section fix section-padding pt-0 pb-2">
@@ -591,14 +495,47 @@
                                     </div>
                                     <div class="text-center">
                                         <h3 class="wow fadeInUp my-3" data-wow-delay=".3s">Address</h3>
-                                        <p class="mt-3 wow fadeInUp" data-wow-delay=".5s">Sunil Nagar, Sunil Nagar Road, Opposite Green Park Society, Dombivli(East) 421201</p>
+                                        <p class="mt-3 wow fadeInUp" data-wow-delay=".5s">Sunil Nagar, Sunil Nagar Road, <br>Opposite Green Park Society, Dombivli(East) 421201</p>
                                     </div>
+                                    
+                        <div class="d-flex justify-content-center mt-5">
+                            <a href="about.html" class="theme-btn bg-transparent">
+                                Floor Plan
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
                                 </div>
                             </div>
                         </section>
 
-                        <div class="single-tab desktop-section">
-                            <ul class="nav mb-2">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- map and Amenities Start -->
+    <section class="contact-Info-section section-padding pb-3 fix pt-1">
+        <div class="container-fluid px-4">
+            <div class="contact-info-wrapper">
+                <div class="row g-3">
+                    <div class="col-xl-5 col-lg-6 bg-white text-center">
+                        <h3 class="wow fadeInUp my-4" data-wow-delay=".3s">Map Location</h3>
+                        <div class="google-map wow fadeInUp my-4" data-wow-delay=".5s">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5426842644656!2d73.088027!3d19.2151666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795343fdce99b%3A0x7c9cf3dae60032a6!2sSaraswati%20Castle%20Housing%20Society!5e0!3m2!1sen!2sin!4v1735744541040!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-7 col-lg-6 bg-white text-center">
+                        <h3 class="wow fadeInUp mt-4 " data-wow-delay=".3s">Amenities</h3>
+                        <div class="single-tab pt-3">
+                            <ul class="nav mb-2 wow fadeInUp d-flex justify-content-center" data-wow-delay=".3s">
                                <li class="nav-item">
                                   <a href="#amenities" data-bs-toggle="tab" class="nav-link ps-0 active">
                                      <h6>Amenities</h6>
@@ -610,7 +547,7 @@
                                   </a>
                                </li>
                             </ul>
-                            <div class="tab-content">
+                            <div class="tab-content wow fadeInUp" data-wow-delay=".5s">
                                <div id="amenities" class="tab-pane fade show active">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -686,7 +623,7 @@
                                                 <h6 class="ms-3 mt-3"> Landscaping and Tree Planting </h6>
                                             </figure>
                                         </div>
-            
+                
                                     </div>
                                 </div>
                                 
@@ -766,7 +703,7 @@
                                                 <h6 class="ms-3 mt-3"> Landscaping and Tree Planting </h6>
                                             </figure>
                                         </div>
-            
+                
                                     </div>
                                 </div>
                                 
@@ -774,231 +711,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- map and streetview Start -->
-    <section class="contact-Info-section section-padding pb-3 fix pt-1">
-        <div class="container">
-            <div class="contact-info-wrapper">
-                <div class="row g-3">
-                    <div class="col-xl-6 col-lg-6 bg-white text-center">
-                        <h3 class="wow fadeInUp my-4" data-wow-delay=".3s">Map Location</h3>
-                        <div class="google-map wow fadeInUp my-4" data-wow-delay=".5s">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5426842644656!2d73.088027!3d19.2151666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795343fdce99b%3A0x7c9cf3dae60032a6!2sSaraswati%20Castle%20Housing%20Society!5e0!3m2!1sen!2sin!4v1735744541040!5m2!1sen!2sin"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                        </div>
-                    </div>
-                    <!--
-                    <div class="col-xl-6 col-lg-6 bg-white text-center">
-                        <h3 class="wow fadeInUp my-4" data-wow-delay=".3s">Street View</h3>
-                        <div class="google-map wow fadeInUp my-4" data-wow-delay=".5s">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!4v1735744300992!6m8!1m7!1shCchVEjkMU9ra9CBIZajDg!2m2!1d19.21528292682795!2d73.08820011970212!3f234.82251!4f0!5f0.7820865974627469"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    -->
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container-fluid shop-details-wrapper">
-        <h2 class="wow fadeInUp text-center" data-wow-delay=".3s"
-                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                Amenities
-            </h2>
-        <div class="single-tab pt-3">
-            <ul class="nav mb-2 wow fadeInUp" data-wow-delay=".3s">
-               <li class="nav-item">
-                  <a href="#mobamenities" data-bs-toggle="tab" class="nav-link ps-0 active">
-                     <h6>Amenities</h6>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="#mobinternalamenities" data-bs-toggle="tab" class="nav-link">
-                     <h6>Internal Amenities</h6>
-                  </a>
-               </li>
-            </ul>
-            <div class="tab-content wow fadeInUp" data-wow-delay=".5s">
-               <div id="mobamenities" class="tab-pane fade show active">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities1.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Power Backup </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities2.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Vaastu Compliant </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities3.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Adequate water supply </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities4.png" width="15%">
-                                <h6 class="ms-3 mt-3"> High-speed Lifts </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities5.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Security Facilities </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities6.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Adequate Parking </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities7.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Fire Fighting Systems </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities8.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Rain Water Harvesting System </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities9.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Maintenance Staff </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities10.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Cross Ventilation </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities11.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Intercom Facility </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities12.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Landscaping and Tree Planting </h6>
-                            </figure>
-                        </div>
-
-                    </div>
-                </div>
-                
-               </div>
-               <div id="mobinternalamenities" class="tab-pane fade">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/internalamenities1.png" width="15%">
-                                <h6 class="ms-3 mt-3"> 	Durable vitrified flooring </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/internalamenities2.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Luxurious Bathrooms </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/internalamenities3.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Concealed Electrical Work </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/internalamenities4.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Ceramic Tiles Above Platform </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities5.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Security Facilities </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities6.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Adequate Parking </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities7.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Fire Fighting Systems </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities8.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Rain Water Harvesting System </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities9.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Maintenance Staff </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities10.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Cross Ventilation </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities11.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Intercom Facility </h6>
-                            </figure>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/img/icons/amenities12.png" width="15%">
-                                <h6 class="ms-3 mt-3"> Landscaping and Tree Planting </h6>
-                            </figure>
-                        </div>
-
-                    </div>
-                </div>
-                
-               </div>  
-            </div>
-        </div>
-    </div>
     <!-- Floor plans Section Start -->
     <section id ="FloorPlan" class="service-details-section fix section-padding pt-2 pb-3">
         <div class="container">
-            <h2 class="wow fadeInUp text-center" data-wow-delay=".3s"
+            <h4 class="wow fadeInUp text-center" data-wow-delay=".3s"
                 style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                 Floor Plans
-            </h2>
+            </h4>
             <div class="project-details-wrapper">
                 <div class="row g-2">
                     <div class="col-12 col-lg-6 ">
@@ -1205,87 +930,6 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
-
-
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-        // Main Js File
-        $(document).ready(function () {
-            // Masonry / Grid layout fnction
-            function layoutInit(container, selector) {
-                $(container).each(function () {
-                    var $this = $(this);
-
-                    $this.isotope({
-                        itemSelector: selector,
-                        layoutMode: ($this.data('layout') ? $this.data('layout') : 'masonry')
-                    });
-                });
-            }
-
-            function isotopeFilter(filterNav, container) {
-                $(filterNav).find('a').on('click', function (e) {
-                    var $this = $(this),
-                        filter = $this.attr('data-filter');
-
-                    // Remove active class
-                    $(filterNav).find('.active').removeClass('active');
-
-                    // Init filter
-                    $(container).isotope({
-                        filter: filter,
-                        transitionDuration: '0.7s'
-                    });
-
-                    // Add active class
-                    $this.closest('li').addClass('active');
-                    e.preventDefault();
-                });
-            }
-
-            /* Masonry / Grid Layout & Isotope Filter for blog/portfolio etc... */
-            if (typeof imagesLoaded === 'function' && $.fn.isotope) {
-                // Portfolio
-                $('.portfolio-container').imagesLoaded(function () {
-                    // Portfolio Grid/Masonry
-                    layoutInit('.portfolio-container', '.portfolio-item'); // container - selector
-                    // Portfolio Filter
-                    isotopeFilter('.portfolio-filter', '.portfolio-container'); //filterNav - .container
-                });
-
-                // Blog
-                $('.entry-container').imagesLoaded(function () {
-                    // Blog Grid/Masonry
-                    layoutInit('.entry-container', '.entry-item'); // container - selector
-                    // Blog Filter
-                    isotopeFilter('.entry-filter', '.entry-container'); //filterNav - .container
-                });
-
-                // Product masonry product-masonry.html
-                $('.product-gallery-masonry').imagesLoaded(function () {
-                    // Products Grid/Masonry
-                    layoutInit('.product-gallery-masonry', '.product-gallery-item'); // container - selector
-                });
-
-                // Products - Demo 11
-                $('.products-container').imagesLoaded(function () {
-                    // Products Grid/Masonry
-                    layoutInit('.products-container', '.product-item'); // container - selector
-                    // Product Filter
-                    isotopeFilter('.product-filter', '.products-container'); //filterNav - .container
-                });
-            }
-
-        });
-
-    </script>
-    <script>
-        Fancybox.bind('[data-fancybox="gallery"]', {
-        //
-    });
-    </script>
 </body>
 
 </html>
