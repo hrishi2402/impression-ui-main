@@ -2566,7 +2566,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 767px) {
   .hero-5 .hero-wrapper .hero-items .hero-content h1 {
-    font-size: 42px;
+    font-size: 23px;
   }
 }
 @media (max-width: 575px) {
