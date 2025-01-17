@@ -2547,7 +2547,7 @@ input.main-search-input::placeholder {
 }
 .hero-5 .hero-wrapper .hero-items .hero-content h1 {
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 @media (max-width: 1399px) {
   .hero-5 .hero-wrapper .hero-items .hero-content h1 {
@@ -2571,7 +2571,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 575px) {
   .hero-5 .hero-wrapper .hero-items .hero-content h1 {
-    font-size: 32px;
+    font-size: 23px;
   }
 }
 .hero-5 .hero-wrapper .hero-items .hero-content h1 span {
