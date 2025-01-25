@@ -36,6 +36,10 @@
                 .desktop-section {
                     display: none;
                 }
+                .section-title span{
+                    font-size: 30px;
+                    font-weight: bolder;
+                }
             }
     
             @media screen and (min-width: 768px) {
@@ -49,7 +53,7 @@
                 .mobile-section {
                     display: none;
                 }
-                h4{
+                .section-title span{
                     font-size: 40px;
                     font-weight: bolder;
                 }
@@ -497,27 +501,22 @@
          <!-- Portfolio Section Start -->
          <section class="portfolio-section fix section-padding  pb-2">
             <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <span class="wow fadeInUp">Our Latest Projects</span>
-                        <h4 class="wow fadeInUp" data-wow-delay=".3s">
-                            Transforming houses into homes
-                        </h4>
-                    </div>
+                <div class="section-title text-center">
+                    <span class="wow fadeInUp">Our Projects</span>
                 </div>
                 
                 <div class="portfolio-wrapper-3 pt-5">
-                    <div class="row g-2 align-items-center">
+                    <div class="row g-lg-2">
                         <div class="col-lg-4 col-sm-12">
                             <div class="project ms-0 wow fadeInUp" data-wow-delay=".4s">
                                 <img src="assets/img/portfolio/portfolio1.png" alt="img" class="project-image">
                             </div>
                             <div class="portfolio-content-wrapper mt-3">
                                 <div class="portfolio-content text-start mb-0">
-                                    <span class="wow fadeInUp">Pannash</span>
                                     <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
+                                        <a href="project-details.html" class="theme-btn bg-transparent radius-none padding-style wow fadeInUp" data-wow-delay=".9s">
+                                            Pannash
+                                            <i class="far fa-plus"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -529,11 +528,14 @@
                             </div>
                             <div class="portfolio-content-wrapper mt-3">
                                 <div class="portfolio-content text-start mb-0">
-                                    <span class="wow fadeInUp">Valencia</span>
+                                    
                                     <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
+                                        <div class="d-flex justify-content-start mb-4">
+                                            <a href="project-details.html" class="theme-btn bg-transparent radius-none padding-style wow fadeInUp" data-wow-delay=".9s">
+                                                Valencia
+                                                <i class="far fa-plus"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -544,11 +546,14 @@
                             </div>
                             <div class="portfolio-content-wrapper mt-3">
                                 <div class="portfolio-content text-start mb-0">
-                                    <span class="wow fadeInUp">Pannash</span>
-                                    <div class="d-flex justify-content-start mb-4">
-                                        <a href="project-details.html" class="link-btn wow fadeInUp" data-wow-delay=".9s">
-                                            Know More<i class='bx bx-chevron-right'></i>
-                                        </a>
+                                    
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <div class="d-flex justify-content-start ">
+                                            <a href="project-details.html" class="theme-btn bg-transparent radius-none padding-style wow fadeInUp" data-wow-delay=".9s">
+                                                Pannash
+                                                <i class="far fa-plus"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -580,9 +585,7 @@
                         <div class="achievement-content">
                         <div class="section-title">
                             <span class="wow fadeInUp">Why Choose Us</span>
-                            <h4 class="wow fadeInUp" data-wow-delay=".3s">
-                                Crafting Spaces, <br> Building Dreams
-                            </h4>
+                            
                         </div>
                         <p class="mt-2 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
                             Your vision is our priority. We collaborate closely to understand your needs and bring your dream home to life.
@@ -649,30 +652,24 @@
             </div>
             </div>
         </section>
-
-
-       
-
+        
        
         <!-- Testimonial Section Start -->
         <section class="testimonial-section section-bg section-padding fix pb-1 pt-5">
             <div class="container">
                 <div class="section-title text-center">
                     <span class="wow fadeInUp">Clients Testimonial</span>
-                    <h4 class="wow fadeInUp" data-wow-delay=".3s">
-                        Architectural excellence <br> interior bliss
-                    </h4>
                 </div>
-                <div class="testimonial-wrapper">
+                <div class="testimonial-wrapper mt-0">
                     <div class="array-button">
                         <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
                         <button class="array-next"><i class="fal fa-arrow-right"></i></button>
                     </div>
                     <div class="row g-0 align-items-center">
                         <div class="col-lg-6">
-                            <div class="testimonial-image bg-cover" style="background-image: url('assets/img/testimonial/01.png');"></div>
+                            <div class="testimonial-image desktop-section bg-cover" style="background-image: url('assets/img/testimonial/01.png');"></div>
                         </div>
-                        <div class="col-lg-6 mt-5 mt-lg-0">
+                        <div class="col-lg-6 mt-0 mt-lg-0">
                             <div class="testimonial-area">
                                 <div class="swiper testimonial-slider">
                                     <div class="swiper-wrapper">
@@ -709,8 +706,6 @@
                 <div class="section-title-area">
                     <div class="section-title">
                         <span class="wow fadeInUp">Latest blog and news</span>
-                        <h4 class="wow fadeInUp" data-wow-delay=".3s">Crafting spaces that 
-                            reflect your style</h4>
                     </div>
                     <div class="array-button wow fadeInUp" data-wow-delay=".5s">
                         <button class="array-prev"><i class="fal fa-arrow-left"></i></button>

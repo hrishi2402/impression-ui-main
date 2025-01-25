@@ -11,7 +11,7 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #3e3091;
+  --theme: #000;
   --theme-2: #b8acff;
   --header: #000000;
   --base: #00813D;
@@ -8446,7 +8446,7 @@ p.sticky-label {
 }
 @media (max-width: 1199px) {
   .portfolio-wrapper-3 .project-image {
-    margin-left: 0;
+    margin-left: -11px;
   }
 }
 .portfolio-wrapper-3 .project-image img {
